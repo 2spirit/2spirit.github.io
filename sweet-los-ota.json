@@ -1,0 +1,14 @@
+{
+  "response": [
+    {
+      "datetime": "1698062745",
+      "filename": "signed-ota_update.zip",
+      "id": "52c0d4b1927615672beed54f7cf142d09468878a",
+      "romtype": "UNOFFICIAL",
+      "size": "1305236657",
+      "url": "https://2spirit.github.io/signed-ota_update.zip",
+      "version": "20.0"
+    }
+  ]
+}
+
