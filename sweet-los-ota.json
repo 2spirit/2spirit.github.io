@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": "1703487998",
-      "filename": "lineage-20.0-20231225-UNOFFICIAL-sweet.zip",
-      "id": "98249e9d7e689b40806d9da9125a1c91ffb8782d",
+      "datetime": "1704294012",
+      "filename": "lineage-20.0-20240103-UNOFFICIAL-sweet.zip",
+      "id": "cd7253b2874503a02233d35d522ad4b8d98f0a78",
       "romtype": "UNOFFICIAL",
-      "size": "1326747262",
-      "url": "https://sourceforge.net/projects/sweet-los20-microg/files/builds/lineage-20.0-20231225-UNOFFICIAL-sweet.zip/download",
+      "size": "1327906235",
+      "url": "https://sourceforge.net/projects/sweet-los20-microg/files/builds/20240103/lineage-20.0-20240103-UNOFFICIAL-sweet.zip/download",
       "version": "20.0"
     }
   ]
