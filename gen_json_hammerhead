@@ -1,0 +1,44 @@
+#!/bin/bash
+
+if [ "$1" = "" ]; then
+	echo "Usage : $0 <ROM> <URL>"
+	exit 1
+fi
+
+if [ "$2" = "" ]; then
+        echo "Usage : $0 <ROM> <URL>"
+        exit 1
+fi
+
+# Settings
+ROM=$1
+URL="${2}"
+JSON="hammerhead-los-ota.json"
+
+echo "Check if rom is present"
+if [ ! -f "$ROM" ]; then
+    echo "$ROM does not exist."
+    exit 1
+fi
+
+CHECK_URL=`curl -Is ${URL} | head -n1 | cut -d " " -f2`
+
+if [ "$CHECK_URL" == "404" ]; then
+	echo "$URL not exist ! check URL"
+	exit 1
+fi
+
+echo "Backup json file"
+cp -p ${JSON} ${JSON}.old
+
+echo "Set variables"
+unzip  ${ROM} META-INF/com/android/metadata -d /tmp/
+DATETIME=`grep post-timestamp /tmp/META-INF/com/android/metadata | cut -d "=" -f2`
+rm -rf /tmp/META-INF
+SIZE=`du -b ${ROM} | cut -f1`
+ID=`sha1sum ${ROM} | cut -d " " -f1`
+FILENAME=`basename ${ROM}`
+
+echo "Generate JSON file"
+printf "{\n  \"response\": [\n    {\n      \"datetime\": \"$DATETIME\",\n      \"filename\": \"$FILENAME\",\n      \"id\": \"$ID\",\n      \"romtype\": \"UNOFFICIAL\",\n      \"size\": \"$SIZE\",\n      \"url\": \"${URL}\",\n      \"version\": \"20.0\"\n    }\n  ]\n}\n" > ${JSON}
+
