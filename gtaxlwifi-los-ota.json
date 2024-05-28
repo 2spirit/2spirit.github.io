@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": "1708509324",
-      "filename": "lineage-20.0-20240221-UNOFFICIAL-gtaxlwifi.zip",
-      "id": "c73705869bb799356e47147bddd9b145594ee2ad",
+      "datetime": "1716563427",
+      "filename": "lineage-20.0-20240528-UNOFFICIAL-gtaxlwifi.zip",
+      "id": "5f304276fb563a9ee922688488829d3d4ec0b6a7",
       "romtype": "UNOFFICIAL",
-      "size": "726672594",
-      "url": "https://sourceforge.net/projects/gtaxlwifi-los20-microg/files/builds/20240221/lineage-20.0-20240221-UNOFFICIAL-gtaxlwifi.zip/download",
+      "size": "753461044",
+      "url": "https://sourceforge.net/projects/gtaxlwifi-los20-microg/files/builds/20240528/lineage-20.0-20240528-UNOFFICIAL-gtaxlwifi.zip/download",
       "version": "20.0"
     }
   ]
