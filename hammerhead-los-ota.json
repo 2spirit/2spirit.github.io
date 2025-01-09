@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": "1730219260",
-      "filename": "lineage-20.0-20241029-UNOFFICIAL-hammerhead.zip",
-      "id": "7213f49b70d4d414e4e6ecd7f9850b95448647e0",
+      "datetime": "1736443495",
+      "filename": "lineage-20.0-20250109-UNOFFICIAL-hammerhead.zip",
+      "id": "8e03dc65a90d88c563d13319291925ec4953a29a",
       "romtype": "UNOFFICIAL",
-      "size": "618144304",
-      "url": "https://sourceforge.net/projects/hammerhead-los20-microg/files/builds/20241029/lineage-20.0-20241029-UNOFFICIAL-hammerhead.zip/download",
+      "size": "630448287",
+      "url": "https://sourceforge.net/projects/hammerhead-los20-microg/files/builds/20250109/lineage-20.0-20250109-UNOFFICIAL-hammerhead.zip/download",
       "version": "20.0"
     }
   ]
